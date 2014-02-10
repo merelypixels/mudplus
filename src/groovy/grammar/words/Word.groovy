@@ -7,5 +7,6 @@ package grammar.words
  * Time: 4:45 PM
  * To change this template use File | Settings | File Templates.
  */
-class Word {
+abstract class Word {
+    abstract String keyText
 }

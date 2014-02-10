@@ -1,7 +1,7 @@
 package mudplus.things
 
 import mudplus.grammar.KnownPrepositionalPhrase
-import mudplus.grammar.KnownWord
+import mudplus.grammar.KnownAdjective
 import things.PhysicalThing
 
 class KnownPhysicalThing extends PhysicalThing {
@@ -12,7 +12,7 @@ class KnownPhysicalThing extends PhysicalThing {
     Boolean hasHeartbeat
 
     //don't use these directly
-    private static hasMany = [ adjectiveDescriptors : KnownWord, prepositionalPhraseDescriptors: KnownPrepositionalPhrase, containedThings: KnownPhysicalThing]
+    private static hasMany = [ adjectiveDescriptors : KnownAdjective, prepositionalPhraseDescriptors: KnownPrepositionalPhrase, containedThings: KnownPhysicalThing]
 
     static constraints = {
         adjectives(nullable: true)

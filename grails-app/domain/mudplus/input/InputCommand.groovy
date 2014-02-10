@@ -1,9 +1,9 @@
 package mudplus.input
 
-import mudplus.grammar.KnownWord
+import mudplus.grammar.KnownVerb
 
 class InputCommand {
-    KnownWord verb
+    KnownVerb verb
 
     static constraints = {
     }

@@ -115,23 +115,6 @@ log4j = {
 }
 
 
-// Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'mudplus.security.DriverUser'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'mudplus.security.DriverUsersecurity.DriverRole'
-grails.plugin.springsecurity.authority.className = 'mudplus.security.DriverRole'
-grails.plugin.springsecurity.requestMap.className = 'mudplus.security.DriverRequestMap'
-grails.plugin.springsecurity.securityConfigType = 'Requestmap'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
-]
-
-
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'mudplus.DriverUser'

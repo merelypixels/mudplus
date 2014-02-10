@@ -1,7 +1,5 @@
 package mudplus
 
-import mudplus.things.KnownPhysicalThing
-
 class DriverUser {
 
 	transient springSecurityService
@@ -12,12 +10,6 @@ class DriverUser {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
-    KnownPhysicalThing currentBody
-    private String knownIpAddresses
-    Date lastLoggedIn
-    Date lastLoggedOut
-
-    static hasMany = [ linkedBodies : KnownPhysicalThing, authorizedSymultaneousUsers: DriverUser]
 
 	static transients = ['springSecurityService']
 
