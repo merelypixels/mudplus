@@ -1,6 +1,7 @@
 package mudplus.things
 
 import grails.test.mixin.TestFor
+import mudplus.things.constants.KnownIntangibleThing
 import spock.lang.Specification
 
 /**

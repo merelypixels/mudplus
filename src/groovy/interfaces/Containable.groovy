@@ -1,6 +1,6 @@
 package interfaces
 
-import mudplus.things.KnownPhysicalThing
+import mudplus.things.constants.KnownPhysicalThing
 
 /**
  * Created with IntelliJ IDEA.
